@@ -149,14 +149,16 @@ footer{
     font-weight: bold;
 }
 .productos__contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-block: 1rem;
+    margin: 0 auto;
+    justify-content: space-between center;
     align-items: center;
     margin-bottom: 2rem;
     margin-top: 1rem;
-    overflow: auto ;
+    overflow:auto;
 }
 @media (max-width: 40em){
     .productos__contenedor{
@@ -166,19 +168,18 @@ footer{
         padding-block: 2rem;
         width: min(95%, 70rem);
         margin: 0 auto;
+        overflow:hidden;
     }
 }
 
 .productos__items1{ 
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     background-color: var(--box-products);
     border-radius: 0.5rem;
     margin: .7rem;
     border : 2px solid var(--box-outline-secondary) ;
-    width: 25%;
-    height: 75%;
     position: relative;
     transition: ease-in 150ms;
 }
@@ -201,8 +202,6 @@ footer{
     border-radius: 0.5rem;
     margin: .7rem;
     border : 2px solid var(--box-outline-secondary) ;
-    width: 25%;
-    height: 75%;
     transition: ease-in 150ms;
 }
 @media (max-width: 40em) {
@@ -223,10 +222,20 @@ footer{
     border-radius: 0.5rem;
     margin: .7rem;
     border : 2px solid var(--box-outline-secondary) ;
-    width: 25%;
-    height: 75%;
     transition: ease-in 150ms;
 }
+/* PRUEBA
+.productos__item3::before {
+    content:'';
+    position: absolute;
+    background: var(--box-outline-secondary);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1rem) rotateX(40deg) scale(1,0.35);
+    filter: blur(2rem);
+} */
 @media (max-width: 40em) {
     .productos__items3{
         width: 90%;
@@ -236,7 +245,9 @@ footer{
 }
 .productos__items3:hover{
     transform:scale(1.05)
+    
 }
+
 .productos__items4{ 
     display: flex;
     justify-content: center;
@@ -245,8 +256,6 @@ footer{
     border-radius: 0.5rem;
     margin: .7rem;
     border : 2px solid var(--box-outline-secondary) ;
-    width: 25%;
-    height: 75%;
     transition: ease-in 150ms;
 }
 @media (max-width: 40em) {
