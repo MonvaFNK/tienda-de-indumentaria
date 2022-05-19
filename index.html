@@ -12,7 +12,7 @@
     <title>(Nombre)Store</title>
 </head>
 <body>
-<header>
+<header class="header__fix">
     <section class="header__titulo" id="header">
         <h1 class="header__titulo--texto">(Nombre) Store</h1>
     </section>
@@ -44,54 +44,50 @@
 </header>
 
 <main id="main">
-    <section class="productos">
-    <h2 class="productos__texto--titulo"> Productos </h2>
-    <ul class="container-fluid productos__contenedor">
-        <li class="col-xl-3 col-md-4 col-sm-6 productos__items1">
-            <div class="productos__items--texto">Producto 1
-                <div class="productos__items--imagen">
-                    <img src="recursos/remera-azul.png"/> 
+    <section>
+        <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="row">
+            <div class="col-md-4">
+                <div class="mb-2 card__color">
+                <img class="card-img-top" src="recursos/remera-azul.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Remera azul</h4>
+                    <p class="card-text">Remera de tela lavable de color azul</p>
+                    <a class="btn btn-primary" id="boton_1">Comprar</a>
                 </div>
-                    <p class="productos__items--parrafo"> Remera azul de tela</p>
-                <div class="productos__items--boton">
-                    <input type="button" value="Comprar" id="boton_1"></input>
-                </div>
-            </div>
-        </li>
-        <li class="col-xl-3 col-md-4 col-sm-6 productos__items2">
-            <div class="productos__items--texto">Producto 2
-                <div class="productos__items--imagen">
-                    <img src="recursos/remera-roja.jpg"/> 
-                </div>
-                    <p class="productos__items--parrafo"> Remera roja de tela</p>
-                <div class="productos__items--boton">
-                    <input type="button" value="Comprar" id="boton_2"></input>
                 </div>
             </div>
-        </li>
-        <li class="col-xl-3 col-md-4 col-sm-6 productos__items3">
-            <div class="productos__items--texto">Producto 3
-                <div class="productos__items--imagen">
-                        <img src="recursos/remera-violeta.jpg"/> 
-                    </div>
-                        <p class="productos__items--parrafo"> Remera violeta de tela</p>
-                    <div class="productos__items--boton">
-                        <input type="button" value="Comprar" id="boton_3"></input>
-                    </div>
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="mb-2 card__color">
+                <img class="card-img-top" src="recursos/remera-negra.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Remera negra</h4>
+                    <p class="card-text">Remera de tela lavable de color negra</p>
+                    <a class="btn btn-primary" id="boton_2">Comprar</a>
                 </div>
-        </li>
-        <li class="col-xl-3 col-md-4 col-sm-6 productos__items4">
-            <div class="productos__items--texto">Producto 4
-                <div class="productos__items--imagen">
-                    <img src="recursos/remera-negra.jpg"/> 
-                </div>
-                    <p class="productos__items--parrafo"> Remera negra de tela</p>
-                <div class="productos__items--boton">
-                    <input type="button" value="Comprar" id="boton_4"></input>
                 </div>
             </div>
-        </li>
-    </ul>
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="mb-2 card__color">
+                <img class="card-img-top" src="recursos/remera-roja.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Remera roja</h4>
+                    <p class="card-text"> Remera de tela lavable de color roja</p>
+                    <a class="btn btn-primary" id="boton_3">Comprar</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
 
     <section class="inicio__ofertas">
@@ -105,7 +101,7 @@
                     </div>
                         <p class="inicio__ofertas--itemsparrafo"> Remera azul de tela</p>
                     <div class="inicio__ofertas--itemsboton">
-                        <input type="button" value="Comprar" id="boton_1"></input>
+                        <input type="button" value="Comprar" id="boton_4"></input>
                     </div>
                 </div>
             </li>

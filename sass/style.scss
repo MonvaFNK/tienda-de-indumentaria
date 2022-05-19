@@ -1,7 +1,7 @@
 *{
     font-size: 16px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 :root {
     --text-color: red;
@@ -36,6 +36,7 @@ footer{
     margin: 1rem;
 }
 
+
 .header__titulo{
     display: flex;
     justify-content: center;
@@ -46,33 +47,31 @@ footer{
     background-size: 100% 100%;
     color: var(--text-color);
     height: 10rem;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0px;
     border: 0px;
-    margin-bottom: 0rem;
-    overflow:hidden;
 }
 .header__titulo--texto{
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-top: 2.5rem;
     width: 5rem;
-    height:5rem;
+    height:2.5rem;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .header__navegacion{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
-    padding-top: 0%;
+    overflow:hidden;
+    padding: 0.5rem;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0.5rem;
     background-color: blue;
     width: 100%;
-    height: 5.4rem;
-    margin-top: -0.47rem;
+    height: 4.7rem;
 }
 
 .header__navegacion--list{
@@ -121,7 +120,7 @@ footer{
 }
 
 .navbarOffsetMargin {
-    padding-top: 15.7rem;
+    padding-top: 5.7rem;
 }
 .header__navegacion--links:hover,
 .header__navegacion--links:focus{
@@ -134,32 +133,32 @@ footer{
 
 /* Pagina de "inicio" */
 
-.carousel {
-    justify-content: center;
-    align-items: center;
+.productos {
+    display:block;
     background-color: var(--box-insidecolor);
     border : 2px solid var(--box-outline) ;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0.5rem;
     margin: 0.5rem;
 }
-.card__color{
-    background-color: rgba(29, 29, 41, 0.267);
-    max-width: 20rem;
 
+.productos__texto--titulo{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--subtitles-white);
+    font-weight: bold;
 }
-.card-body{
-    background-color: rgba(85, 85, 236, 0.473);
-    color: #000;
-}
-
-.card-img-top{
-    justify-content: center;
+.productos__contenedor{
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-block: 1rem;
+    margin: 0 auto;
+    justify-content: space-between center;
     align-items: center;
-}
-.carousel-item active{  
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    overflow:auto;
 }
 @media (max-width: 40em){
     .productos__contenedor{
@@ -424,10 +423,12 @@ footer{
     border : 0.1rem solid var(--box-outline) ;
     margin: 0.5rem;
     padding: 0.5rem;
-    color: rgb(255, 255, 255);
+    color: white;
 }
-.pagos__contenedor{
-    background-color: rgba(255, 255, 255, 0.096);
+.pagos__compra--texto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* pagina de ofertas */

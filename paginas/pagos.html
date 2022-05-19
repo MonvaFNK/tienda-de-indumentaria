@@ -41,24 +41,43 @@
     </section>
 
     <section class="pagos__compra">
-        <h2 class="pagos__compra--texto">Complete sus datos para realizar la compra</h2>
-            <form method="post">
-                    <div>
-                        <input placeholder="Ingresar aqui su email" type="text" id="contactomail"></input>
-                        <input type="reset" value="Limpiar"></input>
+        <div class="container p-0">
+            <div class="pagos__contenedor px-4">
+                <p class="h8 py-3">Detalles de pago</p>
+                <div class="row gx-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Nombre y Apellido</p>
+                            <input class="form-control mb-3" type="text" placeholder="Ej: Pedro Gutierrez">
+                        </div>
                     </div>
-                        <input placeholder="Nombre" type="text" id="nombre"></input>
-                        <input type="reset" value="Limpiar"></input>
-                    <div>
-                        <input placeholder="Direccion" type="text" id="direccion"></input>
-                        <input type="reset" value="Limpiar"></input>
+                    <div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Numero de Tarjeta</p>
+                            <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                        </div>
                     </div>
-                    <div>
-                        <input placeholder="Datos de la tarjeta" type="text" id="tarjeta"></input>
-                        <input type="reset" value="Limpiar"></input>
-                        <input type="button" value="Enviar" id="pagosbtn"></input>
-                    <div>
-            </form>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">Fecha de expiracion de la tarjeta</p>
+                            <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">CVV/Codigo de seguridad</p>
+                            <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn btn-primary mb-3">
+                            <span class="ps-3">Comprar</span>
+                            <span class="fas fa-arrow-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
