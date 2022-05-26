@@ -1,7 +1,7 @@
 *{
     font-size: 16px;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 :root {
     --text-color: red;
@@ -35,10 +35,9 @@ footer{
     padding: 1rem;
     margin: 1rem;
 }
-
-
-.header__titulo{
-    display: flex;
+.header {
+    &__titulo {
+        display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -47,56 +46,59 @@ footer{
     background-size: 100% 100%;
     color: var(--text-color);
     height: 10rem;
-    margin-top: 0;
+    margin-top: 0px;
     padding: 0px;
     border: 0px;
-}
-.header__titulo--texto{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 2.5rem;
-    width: 5rem;
-    height:2.5rem;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.header__navegacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-bottom: 0rem;
     overflow:hidden;
-    padding: 0.5rem;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0.5rem;
-    background-color: blue;
-    width: 100%;
-    height: 4.7rem;
+    }
+    &__titulo--texto{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 5rem;
+        height:5rem;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    &__navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        padding-top: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0.5rem;
+        background-color: blue;
+        width: 100%;
+        height: 5.4rem;
+        margin-top: -0.47rem;
+    }
+    &__navegacion--list{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    &__navegacion--links{
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0.5rem; 
+        border: 0.05rem solid transparent;
+        color: var(--text-color);
+        height: 80%;
+        width: 10vw;
+        text-align: center;
+        overflow: hidden;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
 }
 
-.header__navegacion--list{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-}   
-.header__navegacion--links {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 0.5rem; 
-    border: 0.05rem solid transparent;
-    color: var(--text-color);
-    height: 80%;
-    width: 10vw;
-    text-align: center;
-    overflow: hidden;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-}
 @media (max-width: 40em){
     .header__navegacion--links{
         margin-left: .5rem;
@@ -104,23 +106,13 @@ footer{
         min-width: 5rem;
     }
 }
-#header{
-    position:relative;
-}
 .navbar{
     display:flex;
     width: 100%;
 }
-#navbar.sticky {
-    position: fixed;
-    top: 0;
-    width:100%;
-    margin-right: 0px;
-    z-index: 1;
-}
 
 .navbarOffsetMargin {
-    padding-top: 5.7rem;
+    padding-top: 15.7rem;
 }
 .header__navegacion--links:hover,
 .header__navegacion--links:focus{
@@ -133,32 +125,32 @@ footer{
 
 /* Pagina de "inicio" */
 
-.productos {
-    display:block;
+.carousel {
+    justify-content: center;
+    align-items: center;
     background-color: var(--box-insidecolor);
     border : 2px solid var(--box-outline) ;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 0.5rem;
     margin: 0.5rem;
 }
+.card__color{
+    background-color: rgba(29, 29, 41, 0.267);
+    max-width: 20rem;
 
-.productos__texto--titulo{
-    text-align: center;
-    margin-top: 0.5rem;
-    color: var(--subtitles-white);
-    font-weight: bold;
 }
-.productos__contenedor{
-    display:grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-block: 1rem;
-    margin: 0 auto;
-    justify-content: space-between center;
+.card-body{
+    background-color: rgba(85, 85, 236, 0.473);
+    color: #000;
+}
+
+.card-img-top{
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    overflow:auto;
+}
+.carousel-item active{  
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 40em){
     .productos__contenedor{
@@ -166,7 +158,6 @@ footer{
         gap: 1.5rem;
         grid-template-columns: 1fr 1fr;
         padding-block: 2rem;
-        width: min(95%, 70rem);
         margin: 0 auto;
         overflow:hidden;
     }
@@ -423,12 +414,10 @@ footer{
     border : 0.1rem solid var(--box-outline) ;
     margin: 0.5rem;
     padding: 0.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
-.pagos__compra--texto{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.pagos__contenedor{
+    background-color: rgba(255, 255, 255, 0.096);
 }
 
 /* pagina de ofertas */
@@ -466,7 +455,6 @@ footer{
         gap: 1.5rem;
         grid-template-columns: 1fr 1fr;
         padding-block: 2rem;
-        width: min(95%, 70rem)
     }
 }
 .ofertas__items{ 
@@ -569,81 +557,68 @@ footer{
 
 
 /* pagina de "categorias" */
-/* EN REVISION NO RESPONSIVE */
+/* Imagenes placeholder */
+
 .categorias{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: left;
     border: 1px solid var(--box-outline-secondary);
     background-color: var(--box-insidecolor);
-    padding: 10px;
     color:white;
+    padding: 10px;
     margin-top: 20px;
     margin: 2px;
 }
 .categorias__lista{
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 2px;
     color:white;
-    margin-top: 20px;
     margin: 2px;
-    height:500px;
 }
 .categorias__lista--productos{
     display:flex;
+    border: 1px solid var(--box-outline-secondary);
+    background-color: var(--box-insidecolor);
+    color:white;
     flex-direction: column;
     text-align: center;
     background-color: black;
-    width: 18.5%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 20px;
+    width: 100%;
     padding: 0px;
-    height: 7%;
-}
-.categorias__lista--productos:hover{
-    height: 480px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.categorias__lista--productos:hover .categorias__lista--contenedor{
-    display:inline-block;
-    width: 94%;
-    height: 53.99%;
-    border-radius: 5px;
-    background-color: black;
-}
-.categorias__lista--productos:hover .categorias__lista--items{
-    opacity: 1;
-    display: inline-block;
+    margin-bottom: .5rem;
 }
 .categorias__lista--contenedor{
-    position:absolute;
-    flex-direction: column;
-    overflow:auto;
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-block: 2rem;
     background-color: transparent;
-    margin-top: 40px;
-    margin-left: 15px;
 }
 .categorias__lista--items{
-    display: none;
-    position: relative;
-    width: 20%;
-    min-width: 40px;
-    opacity: 0;
-    height: 100%;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 2px;
     border: 1px solid var(--box-outline);
+    border-radius: 5px;
     background-color: var(--box-insidecolor);
+}
+.categorias__lista--itemproducto{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+}
+@media (max-width: 40em){
+    .categorias__lista--contenedor{
+        display:grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        padding-block: 2rem;
+        margin: 0 auto;
+        overflow:hidden;
+    }
 }
