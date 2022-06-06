@@ -28,35 +28,46 @@ body {
 
 /* Pagina de "inicio" */
 
-.carousel {
-    justify-content: center;
-    align-items: center;
-    background-color: $box-insidecolor;
-    border : 2px solid $box-outline ;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-.card__color{
-    background-color: rgba(29, 29, 41, 0.267);
-    max-width: 20rem;
-
-}
-.card-body{
-    background-color: rgba(85, 85, 236, 0.473);
-    color: #000;
-}
-
-.card-img-top{
-    justify-content: center;
-    align-items: center;
-}
-.carousel-item active{  
-    justify-content: center;
-    align-items: center;
-}
 
 .inicio{
+    &__productos--contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $box-products;
+        border-radius: 0.5rem;
+        margin: .7rem;
+        border : 0.1rem solid $box-outline;
+    }
+    &__productos{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: $box-insidecolor;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        margin: 1rem;
+    }
+    &__productos--imagen{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .__productos--carta{
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__productos--titulo{
+        color: $subtitles;
+    }
+    &__productos--texto{
+        color: $subtitles;
+    }
     &__ofertas {
         display: flex;
         align-content: center;

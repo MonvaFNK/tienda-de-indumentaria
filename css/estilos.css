@@ -134,30 +134,43 @@ body {
   background: linear-gradient(0deg, black 30%, #5d2dfd 100%); }
 
 /* Pagina de "inicio" */
-.carousel {
+.inicio__productos--contenedor {
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  margin: .7rem;
+  border: 0.1rem solid lightblue; }
+
+.inicio__productos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
   background-color: rgba(0, 0, 255, 0.342);
-  border: 2px solid lightblue;
-  margin-top: 2rem;
-  padding: 0.5rem;
-  margin: 0.5rem; }
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  margin: 1rem; }
 
-.card__color {
-  background-color: rgba(29, 29, 41, 0.267);
-  max-width: 20rem; }
-
-.card-body {
-  background-color: rgba(85, 85, 236, 0.473);
-  color: #000; }
-
-.card-img-top {
+.inicio__productos--imagen {
+  display: flex;
   justify-content: center;
   align-items: center; }
 
-.carousel-item active {
+.inicio .__productos--carta {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
   justify-content: center;
   align-items: center; }
+
+.inicio__productos--titulo {
+  color: white; }
+
+.inicio__productos--texto {
+  color: white; }
 
 .inicio__ofertas {
   display: flex;
