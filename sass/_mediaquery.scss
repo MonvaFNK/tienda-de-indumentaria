@@ -1,11 +1,11 @@
-@media (max-width: 40em){
+@media (max-width: 45.75em){
     .header__navegacion--links{
         margin-left: .5rem;
         margin-right: .5rem;
         min-width: 5rem;
     }
 }
-@media (max-width: 40em){
+@media (max-width: 45.75em){
     .productos__contenedor{
         display:grid;
         gap: 1.5rem;
@@ -15,7 +15,7 @@
         overflow:hidden;
     }
 }
-@media (max-width: 40em){
+@media (max-width: 45.75em){
     .ofertas__contenedor{
         display:grid;
         gap: 1.5rem;
@@ -23,13 +23,13 @@
         padding-block: 2rem;
     }
 }
-@media (max-width: 40em){
+@media (max-width: 45.75em){
     .ofertas__items{
         width: 90%;
         height: 100%;
     }
 }
-@media (max-width: 40em){
+@media (max-width: 45.75em){
     .categorias__lista--contenedor{
         display:grid;
         gap: 1.5rem;
