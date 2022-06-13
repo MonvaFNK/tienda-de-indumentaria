@@ -216,7 +216,6 @@ $oferta__ropa:(
         height: 28rem;
         margin: .7rem;
         border : 0.1rem solid $box-outline-secondary;
-        width: 25%;
     }
 }
 .ofertas {
@@ -237,23 +236,9 @@ $oferta__ropa:(
         margin-left: 0.1rem;
     }
     &__contenedor{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-between;
-        align-items: center;
-        overflow: auto;
-    }
-    &__items{ 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $box-products;
-        border-radius: 0.5rem;
-        margin: .7rem;
-        border : 0.1rem solid $box-outline-secondary;;
-        width: 25%;
-        height: 75%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     &__items--texto{
         text-align: center;
@@ -263,13 +248,13 @@ $oferta__ropa:(
         width: 12.5rem;
         margin-left: 0.1rem;
         margin-right: 0.1rem;
-        
         width: 100%;
     }
     &__items--parrafo{ 
         font-size: 0.75rem;
         text-align: center;
-        font-weight: 200;
+        font-weight: 300;
+        font-size: 0.8rem;
         height: 4rem;
         padding-top: 18rem;
         margin-left: 0.1rem;
@@ -289,23 +274,29 @@ $oferta__ropa:(
         width: 100%;
     }
     &__items--imagentexto{
-        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         bottom: 0.1rem;
         right: 0.5rem;
         color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         border-radius: 2rem;
-        border: 3px solid $cincuentaoff-color;
+        border: 2px solid $cincuentaoff-color;
         background-color: $cincuentaoff;
         padding: 0.5rem;
         margin: 0.1rem;
-        margin-top:15rem;
-        padding-top: 10rem;
+        width: 6rem;
+        margin-bottom: .5rem;
     }
     &__items--boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         padding:0px;
-        margin-top:2rem;
-        
+        margin-top:1.5rem;
+        margin-bottom: 1rem;
     }
 }
 

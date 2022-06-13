@@ -324,8 +324,7 @@ body {
   border-radius: 0.5rem;
   height: 28rem;
   margin: .7rem;
-  border: 0.1rem solid #1eff00;
-  width: 25%; }
+  border: 0.1rem solid #1eff00; }
 
 .remera2-card {
   display: flex;
@@ -338,8 +337,7 @@ body {
   border-radius: 0.5rem;
   height: 28rem;
   margin: .7rem;
-  border: 0.1rem solid #1eff00;
-  width: 25%; }
+  border: 0.1rem solid #1eff00; }
 
 .remera3-card {
   display: flex;
@@ -352,8 +350,7 @@ body {
   border-radius: 0.5rem;
   height: 28rem;
   margin: .7rem;
-  border: 0.1rem solid #1eff00;
-  width: 25%; }
+  border: 0.1rem solid #1eff00; }
 
 .remera4-card {
   display: flex;
@@ -366,8 +363,7 @@ body {
   border-radius: 0.5rem;
   height: 28rem;
   margin: .7rem;
-  border: 0.1rem solid #1eff00;
-  width: 25%; }
+  border: 0.1rem solid #1eff00; }
 
 .ofertas {
   display: flex;
@@ -386,22 +382,9 @@ body {
     font-weight: bold;
     margin-left: 0.1rem; }
   .ofertas__contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    overflow: auto; }
-  .ofertas__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 0.5rem;
-    margin: .7rem;
-    border: 0.1rem solid #1eff00;
-    width: 25%;
-    height: 75%; }
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
   .ofertas__items--texto {
     text-align: center;
     margin-top: 0.5rem;
@@ -414,7 +397,8 @@ body {
   .ofertas__items--parrafo {
     font-size: 0.75rem;
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 0.8rem;
     height: 4rem;
     padding-top: 18rem;
     margin-left: 0.1rem;
@@ -432,21 +416,28 @@ body {
     margin-right: 0.1rem;
     width: 100%; }
   .ofertas__items--imagentexto {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0.1rem;
     right: 0.5rem;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     border-radius: 2rem;
-    border: 3px solid black;
+    border: 2px solid black;
     background-color: red;
     padding: 0.5rem;
     margin: 0.1rem;
-    margin-top: 15rem;
-    padding-top: 10rem; }
+    width: 6rem;
+    margin-bottom: .5rem; }
   .ofertas__items--boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0px;
-    margin-top: 2rem; }
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; }
 
 /*  pagina de "contacto"  */
 .contacto__contenedor {
