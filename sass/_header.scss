@@ -25,12 +25,17 @@
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     &__navbar{
+        display:flex;
+        justify-content: right;
+        align-content: right;
+        margin-right: .5rem;
         width: 100%;
         background-color: rgb(75, 75, 161);
     }
     &__navbar--button{
         background-color: rgb(75, 75, 161);
         color: $subtitles;
+
     }
     &__navegacion{
         display: flex;
